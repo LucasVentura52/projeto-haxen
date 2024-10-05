@@ -1,6 +1,6 @@
-$(document).ready(function () {
-    $('#infoModal').modal('show');
-});
+//$(document).ready(function () {
+//    $('#infoModal').modal('show');
+//});
 
 document.getElementById('openModal').addEventListener('click', function () {
     fetch('src/HTML/page.html')
