@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haxen</title>
+    <link rel="stylesheet" href="src/CSS/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">HAXEN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="#" id="openModal">Botão opção 1</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="#" id="openModal2">Botão opção 2</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="#">Botão opção 3</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="#">Botão opção 4</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- MODAL ALERTA -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Bem-vindo ao Haxen!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>HAXEN é um grupo no hackathon da NASA 2024, formado para desenvolver soluções inovadoras e
+                        criativas em tecnologia espacial e outros desafios científicos. O time está focado em trazer
+                        ideias que combinam expertise técnica e visão estratégica para resolver problemas relevantes de
+                        forma impactante.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- MODAL COM CONTEÚDO DE OUTRO HTML -->
+    <div class="modal fade" id="infoModal1" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModal3Label">MODAL HTML</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBody" class="modal-body" style="overflow-y: auto;">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- MODAL COM CONTEÚDO PRÓPRIO -->
+    <div class="modal fade " id="infoModal2" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModal2Label">MODAL PRÓPRIO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="overflow-y: auto;">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2 class="mt-4">O que são Exoplanetas?</h2>
+                            <p>
+                                Exoplanetas, ou planetas extrasolares, são planetas que orbitam estrelas fora do nosso sistema
+                                solar. Desde a primeira descoberta de um exoplaneta na década de 1990, milhares de exoplanetas
+                                foram identificados, variando em tamanho, composição e órbita.
+                            </p>
+        
+                            <div class="text-center my-4">
+                                <img src="https://www.canalhistory.com.br/sites/history.uol.com.br/files/styles/wide/public/images/2024/09/27/Exoplaneta%20-%20Gigante%20-%20History%20Channel%20Brasil.jpg"
+                                    alt="Exoplaneta" class="img-fluid" style="max-width: 80%;">
+                            </div>
+                        </div>
+                        
+                        <div class="col-6">
+                            <p>
+                                Esses mundos podem ser gasosos, como Júpiter, ou rochosos, como a Terra. Alguns exoplanetas
+                                estão localizados na "zona habitável" de suas estrelas, onde as condições podem permitir a
+                                presença de água líquida, aumentando a possibilidade de vida. A busca por exoplanetas é uma área
+                                fascinante da astronomia moderna, fornecendo insights sobre a formação de sistemas planetários e
+                                as condições que podem sustentar a vida.
+                            </p>
+        
+                            <div class="text-center my-4 responsive">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d_5_MAqsPOM" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="src/SCRIPT/scrip.js"></script>
+</body>
+
+</html>
