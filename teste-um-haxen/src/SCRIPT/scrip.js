@@ -21,3 +21,12 @@ document.getElementById('openModal2').addEventListener('click', function () {
         })
         .catch(error => console.error('Erro ao carregar a nova página:', error));
 });
+
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+function teste(){
+    $(document).ready(function () {
+        $('#infoModal').modal('show');
+    });
+}
