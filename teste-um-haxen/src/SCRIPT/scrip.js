@@ -1,38 +1,62 @@
-//$(document).ready(function () {
-//    $('#infoModal').modal('show');
-//});
-
-document.getElementById('openModal').addEventListener('click', function () {
-    fetch('src/HTML/page.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('modalBody').innerHTML = data;
-            $('#infoModal1').modal('show');
-        })
-        .catch(error => console.error('Erro ao carregar a nova página:', error));
-});
-
-function teste(){
-    fetch('src/HTML/page.html')
+//SCRIPT BUTTON ITENS NAVBAR
+function abrirModalNavbar1(){
+    fetch('src/HTML/navbar-pages/page1.html')
     .then(response => response.text())
     .then(data => {
-        document.getElementById('modalBody').innerHTML = data;
+        document.getElementById('modalBodyNav1').innerHTML = data;
         $('#infoModal1').modal('show');
     })
 }
 
-document.getElementById('openModal2').addEventListener('click', function () {
-    fetch('page.html')
+function abrirModalNavbar2(){
+    fetch('src/HTML/navbar-pages/page2.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('modalBody').innerHTML = data;
+            document.getElementById('modalBodyNav2').innerHTML = data;
             $('#infoModal2').modal('show');
         })
-        .catch(error => console.error('Erro ao carregar a nova página:', error));
-});
+}
+
+function abrirModalNavbar3(){
+    fetch('src/HTML/navbar-pages/page3.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('modalBodyNav3').innerHTML = data;
+            $('#infoModal3').modal('show');
+        })
+}
+
+function abrirModalNavbar4(){
+    fetch('src/HTML/navbar-pages/page4.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('modalBodyNav4').innerHTML = data;
+            $('#infoModal4').modal('show');
+        })
+}
+
+function abrirModalNavbar5(){
+    fetch('src/HTML/quemSomos.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('modalBodyNav5').innerHTML = data;
+            $('#infoModal5').modal('show');
+        })
+}
 
 
+
+
+
+
+
+
+
+
+//SCRIPT DATA DO FOOTER
 document.getElementById("year").textContent = new Date().getFullYear();
+
+
 
 
 
@@ -65,5 +89,19 @@ function abrirModalCard3() {
     .then(data => {
         document.getElementById('modalBody3').innerHTML = data;
         $('#infoModalCard3').modal('show');
+    })
+}
+
+
+
+
+
+
+function abrirModalCarousel3() {
+    fetch('src/HTML/carousel-pages/pageCarousel3.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('modalBodyCo3').innerHTML = data;
+        $('#infoModalCo3').modal('show');
     })
 }

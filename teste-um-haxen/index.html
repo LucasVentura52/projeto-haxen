@@ -8,6 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="src/CSS/style.css">
     <link rel="stylesheet" href="src/CSS/styleModal.css">
+    <link rel="shortcut icon" href="src/IMG/WhatsApp_Image.png" type="image/x-icon">
 </head>
 <style>
     body {
@@ -31,22 +32,31 @@
             style="margin-right: 100px; margin-top: -20px">
             <ul class="navbar-nav">
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#" id="openModal" onclick="teste()">Botão opção 1</a>
+                    <a class="nav-link" href="#" onclick="abrirModalNavbar1()">O que são?</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#" id="openModal2">Botão opção 2</a>
+                    <a class="nav-link" href="#" onclick="abrirModalNavbar2()">Como são descobertos?</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">Botão opção 3</a>
+                    <a class="nav-link" href="#" onclick="abrirModalNavbar3()">Classificação</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">Botão opção 4</a>
+                    <a class="nav-link" href="#" onclick="abrirModalNavbar4()">Estrelas e sistemas estrelares</a>
+                </li>
+                <li class="nav-item mx-3" style="margin-right: 500px;">
+                    <a class="nav-link" href="#" onclick="abrirModalNavbar5()">Quem somos</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    
+
+
+
+
+
+
+
 
 
     <!-- CAROUSEL DE IMAGENS -->
@@ -59,15 +69,15 @@
         </ol>
         <div class="carousel-inner" style="border-radius: 16px;">
             <div class="carousel-item active">
-                <img class="d-block h-500" src="src/IMG/Banner/Design_sem_nome_2.png" alt="First 
-                
-                slide">
+                <img class="d-block h-500" src="src/IMG/Banner/Design_sem_nome_2.png" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="src/IMG/Banner/james_web.jpg" alt="Second slide">
+                <a href="https://eyes.nasa.gov/apps/exo/#/"><img class="d-block w-100"
+                        src="src/IMG/Banner/BANNERS_2.png" alt="Second slide"></a>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="src/IMG/sistema-solar.jpg" alt="Third slide">
+                <a href="#" onclick="abrirModalCarousel3()"><img class="d-block w-100"
+                        src="src/IMG/Banner/BANNERS_3.png" alt="Third slide"></a>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -84,60 +94,88 @@
 
 
 
-    <!-- CARD COM IMAGENS E CONTEÚDOS-->
-     <div class="container-fluid" style="margin-top: 30px;">
 
-         <div class="row">
-             <div class="col-md-4">
+
+
+
+
+    <!-- CARD COM IMAGENS E CONTEÚDOS-->
+    <div class="container-fluid" style="margin-top: 30px;">
+
+        <div class="row">
+            <div class="col-md-4">
                 <div class="card" style="border-radius: 16px; background-color: rgb(0, 0, 0); color: azure;">
-                    <img class="card-img-top" src="src/IMG/sistema-solar.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="src/IMG/cards/1.png" alt="Card image cap">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button class="open-modal-btn btn btn-info" onclick="abrirModalCard1()">Saiba mais</button>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Você já imaginou planetas feitos de diamante e chuvas de vidro? 💎🌧️ Venha
+                            explorar exoplanetas super legais que desafiam a nossa imaginação! Desde mundos brilhantes e
+                            preciosos até planetas que giram ao redor de estrelas que já se apagaram, o universo está
+                            cheio de surpresas incríveis!🚀🌟</p>
+                        <button class="open-modal-btn btn btn-info" onclick="abrirModalCard1()">Saiba mais</button>
                     </div>
                 </div>
-             </div>
-             <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
                 <div class="card" style="border-radius: 16px; background-color: rgb(0, 0, 0); color: azure;">
-                    <img class="card-img-top" src="src/IMG/sistema-solar.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="src/IMG/cards/2.png" alt="Card image cap">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button class="open-modal-btn btn btn-info" onclick="abrirModalCard2()">Saiba mais</button>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text" style="margin-bottom: 38px;">Estamos sozinhos no universo? 🌌👽 Cientistas estão em busca de sinais de
+                            vida em exoplanetas, investigando desde gases estranhos nas atmosferas até sinais de
+                            civilizações avançadas! Será que um dia vamos descobrir que não estamos sozinhos?</p>
+                        <button class="open-modal-btn btn btn-info" onclick="abrirModalCard2()">Saiba mais</button>
                     </div>
                 </div>
-             </div>
-             <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
                 <div class="card" style="border-radius: 16px; background-color: rgb(0, 0, 0); color: azure;">
-                    <img class="card-img-top" src="src/IMG/sistema-solar.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="src/IMG/cards/3.png" alt="Card image cap">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button class="open-modal-btn btn btn-info" onclick="abrirModalCard3()">Saiba mais</button>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text" style="margin-bottom: 60px;">Já imaginou como seriam os planetas em outros mundos? 🌌 No cinema,
+                            exoplanetas aparecem em filmes e séries, misturando ciência de verdade com muita imaginação!
+                            Vem ver onde assistir e explorar essas ideias incríveis!"</p>
+                        <button class="open-modal-btn btn btn-info" onclick="abrirModalCard3()">Saiba mais</button>
                     </div>
                 </div>
-             </div>
-         </div>
-     </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 
 
 
 
     <!-- IMAGEM DO JOGO -->
-    <div id="carouselExampleIndicators" class="carousel slide custom-imgCarrossel2 justify-content-center my-4" data-ride="carousel"
-        style="margin-top: 10px; margin: auto">
+    <div id="carouselExampleIndicators" class="carousel slide custom-imgCarrossel2 justify-content-center my-4"
+        data-ride="carousel" style="margin-top: 10px; margin: auto">
         <div class="carousel-inner" style="border-radius: 16px;">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="src/IMG/Banner/BannerJogosExoplanetas_1.png" alt="Third slide">
             </div>
         </div>
     </div>
-    
 
 
 
-    <!-- MODAL NAVBAR COM CONTEÚDO DE OUTRO HTML  -->
+
+
+
+
+
+
+
+
+
+    <!-- MODAL NAVBAR COM CONTEÚDO DE OUTRO HTML 1 -->
     <div class="modal fade" id="infoModal1" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -149,20 +187,116 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div id="modalBody" class="modal-body" style="overflow-y: auto;">
-                    
+                <div id="modalBodyNav1" class="modal-body" style="overflow-y: auto;">
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Saiba mais</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    
-    
+
+    <!-- MODAL NAVBAR COM CONTEÚDO DE OUTRO HTML 2 -->
+    <div class="modal fade" id="infoModal2" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div style="margin-left: 305px;">
+                        <h5 class="modal-title" id="infoModal3Label">EXOPLANETAS</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBodyNav2" class="modal-body" style="overflow-y: auto;">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL NAVBAR COM CONTEÚDO DE OUTRO HTML 3 -->
+    <div class="modal fade" id="infoModal3" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="border-radius: 16px;">
+                <div class="modal-header">
+                    <div style="margin-left: 300px;">
+                        <h5 class="modal-title" id="infoModal3Label">EXOPLANETAS</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBodyNav3" class="modal-body" style="overflow-y: auto;">
+
+                </div>
+                <div class="modal-footer">
+                    <a href="src/HTML/navbar-pages/page3.1.html"><button type="button" class="btn btn-info">Saiba
+                            mais</button></a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL NAVBAR COM CONTEÚDO DE OUTRO HTML 4 -->
+    <div class="modal fade" id="infoModal4" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div style="margin-left: 305px;">
+                        <h5 class="modal-title" id="infoModal3Label">EXOPLANETAS</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBodyNav4" class="modal-body" style="overflow-y: auto;">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL NAVBAR COM CONTEÚDO DE OUTRO HTML 5 -->
+    <div class="modal fade" id="infoModal5" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div style="margin-left: 305px;">
+                        <h5 class="modal-title" id="infoModal3Label">QUEM SOMOS?</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBodyNav5" class="modal-body" style="overflow-y: auto;">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
     <!-- MODAL CARD COM CONTEÚDO DE OUTRO HTML 1 -->
     <div class="modal fade" id="infoModalCard1" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -176,19 +310,15 @@
                     </button>
                 </div>
                 <div id="modalBody1" class="modal-body" style="overflow-y: auto;">
-                    
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Saiba mais</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    
-    
+
     <!-- MODAL CARD COM CONTEÚDO DE OUTRO HTML 2 -->
     <div class="modal fade" id="infoModalCard2" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -202,21 +332,15 @@
                     </button>
                 </div>
                 <div id="modalBody2" class="modal-body" style="overflow-y: auto;">
-    
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Saiba mais</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    
-    
+
     <!-- MODAL CARD COM CONTEÚDO DE OUTRO HTML 3 -->
     <div class="modal fade" id="infoModalCard3" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -230,10 +354,9 @@
                     </button>
                 </div>
                 <div id="modalBody3" class="modal-body" style="overflow-y: auto;">
-    
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Saiba mais</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
@@ -243,78 +366,96 @@
 
 
 
-<!-- MODAL COM CONTEÚDO PRÓPRIO -->
-<div class="modal fade " id="infoModal2" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="infoModal2Label">MODAL PRÓPRIO</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body" style="overflow-y: auto;">
-                <div class="row">
-                    <div class="col-6">
-                        <h2 class="mt-4">O que são Exoplanetas?</h2>
-                        <p>
-                            Exoplanetas, ou planetas extrasolares, são planetas que orbitam estrelas fora do nosso
-                            sistema
-                            solar. Desde a primeira descoberta de um exoplaneta na década de 1990, milhares de
-                            exoplanetas
-                            foram identificados, variando em tamanho, composição e órbita.
-                        </p>
-                        
-                        <div class="text-center my-4">
-                            <img src="https://www.canalhistory.com.br/sites/history.uol.com.br/files/styles/wide/public/images/2024/09/27/Exoplaneta%20-%20Gigante%20-%20History%20Channel%20Brasil.jpg"
-                            alt="Exoplaneta" class="img-fluid" style="max-width: 80%;">
-                        </div>
-                    </div>
 
-                    <div class="col-6">
-                        <p>
-                            Esses mundos podem ser gasosos, como Júpiter, ou rochosos, como a Terra. Alguns exoplanetas
-                            estão localizados na "zona habitável" de suas estrelas, onde as condições podem permitir a
-                            presença de água líquida, aumentando a possibilidade de vida. A busca por exoplanetas é uma
-                            área
-                            fascinante da astronomia moderna, fornecendo insights sobre a formação de sistemas
-                            planetários e
-                            as condições que podem sustentar a vida.
-                        </p>
-                        
-                        <div class="text-center my-4 responsive">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d_5_MAqsPOM"
-                                    allowfullscreen></iframe>
-                                </div>
-                        </div>
+
+
+
+
+
+    <!-- MODAL CAROUSEL COM CONTEÚDO DE OUTRO HTML 1 -->
+    <div class="modal fade" id="infoModalCo1" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div style="margin-left: 305px;">
+                        <h5 class="modal-title" id="infoModal3Label">EXOPLANETAS</h5>
                     </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                <div id="modalBodyCo1" class="modal-body" style="overflow-y: auto;">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Saiba mais</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
+    <!-- MODAL CAROUSEL COM CONTEÚDO DE OUTRO HTML 2 -->
+    <div class="modal fade" id="infoModalCo2" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div style="margin-left: 305px;">
+                        <h5 class="modal-title" id="infoModal3Label">EXOPLANETAS</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBodyCo2" class="modal-body" style="overflow-y: auto;">
 
-
-
-<div style="margin-top: 1px;">
-    .
-</div>
-
-<footer>
-    <div class="copyright">
-        HAXEN &copy; <span id="year"></span> Todos os direitos reservados.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Saiba mais</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
     </div>
-</footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="src/SCRIPT/scrip.js"></script>
-</body>
+    <!-- MODAL CAROUSEL COM CONTEÚDO DE OUTRO HTML 3 -->
+    <div class="modal fade" id="infoModalCo3" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div style="margin-left: 305px;">
+                        <h5 class="modal-title" id="infoModal3Label">James Webb</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBodyCo3" class="modal-body" style="overflow-y: auto;">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 1px;">
+        .
+    </div>
+
+    <footer>
+        <div class="copyright">
+            HAXEN &copy; <span id="year"></span> Todos os direitos reservados.
+        </div>
+        <div class="copyright">
+            Space Apps Chalange - NASA 2024
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="src/SCRIPT/scrip.js"></script>
+    </body>
 
 </html>
