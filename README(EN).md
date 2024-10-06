@@ -35,13 +35,13 @@ This project was created with young people curious about space and astronomy in 
 
 4. Open the index.html file in your browser!
 
-##Contributions
+## Contributions
 We are open to contributions! If you have ideas to improve the informational part or help develop the planned features, feel free to open a pull request or an issue.
 
-##Next Steps
+## Next Steps
 - Development of interactive mini-games.
 - Expansion of the exoplanet database.
 - Gamification system with achievements and rankings.
   
-##Contact
+## Contact
 For questions or suggestions, send an email to: mluca2564@gmail.com
