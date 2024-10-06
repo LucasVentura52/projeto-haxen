@@ -1,5 +1,5 @@
 .imgLogo{
-    width: 100px;
+    width: 120px;
     height: 50px;
     margin-left: 30px;
     margin-top: -20px;
@@ -7,13 +7,11 @@
 
 .custom-imgCarrossel{
     display: flex;
-    width: 1450px !important;
+
     height: 450px !important;
 }
 
-.d-block{
-    width: 100%;
-}
+
 
 .copyright {
     width: 100%;

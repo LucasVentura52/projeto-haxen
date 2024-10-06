@@ -7,6 +7,7 @@
     <title>Haxen</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="src/CSS/style.css">
+    <link rel="stylesheet" href="src/CSS/styleModal.css">
 </head>
 <style>
     body {
@@ -19,9 +20,6 @@
     }
 </style>
 <div>
-
-
-
     <!-- NAVBAR INICIAL -->>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <img class="imgLogo" src="src/IMG/WhatsApp_Image_2024-10-01_at_21.23.22.png" alt=""></img>
@@ -33,7 +31,7 @@
             style="margin-right: 100px; margin-top: -20px">
             <ul class="navbar-nav">
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#" id="openModal">Botão opção 1</a>
+                    <a class="nav-link" href="#" id="openModal" onclick="teste()">Botão opção 1</a>
                 </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="#" id="openModal2">Botão opção 2</a>
@@ -48,12 +46,12 @@
         </div>
     </nav>
 
-
+    
 
 
     <!-- CAROUSEL DE IMAGENS -->
-    <div id="carouselExampleIndicators" class="carousel slide custom-imgCarrossel" data-ride="carousel"
-        style="margin-top: 10px; margin-left: 40px;">
+    <div id="carouselExampleIndicators" class="carousel slide custom-imgCarrossel container-fluid" data-ride="carousel"
+        style="margin-top: 10px;">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -61,7 +59,9 @@
         </ol>
         <div class="carousel-inner" style="border-radius: 16px;">
             <div class="carousel-item active">
-                <img class="d-block h-500" src="src/IMG/Banner/banner_space_apps.jpg" alt="First slide">
+                <img class="d-block h-500" src="src/IMG/Banner/Design_sem_nome_2.png" alt="First 
+                
+                slide">
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="src/IMG/Banner/james_web.jpg" alt="Second slide">
@@ -83,111 +83,162 @@
 
 
 
-    <!-- CARD COM IMAGENS E CONTEÚDOS-->>
-    <div class="row  justify-content-center">
-        <div class="col-4">
-            <div class="my-4">
-                <div class="card" style="width: 40rem; border-radius: 16px;">
+
+    <!-- CARD COM IMAGENS E CONTEÚDOS-->
+     <div class="container-fluid" style="margin-top: 30px;">
+
+         <div class="row">
+             <div class="col-md-4">
+                <div class="card" style="border-radius: 16px; background-color: rgb(0, 0, 0); color: azure;">
                     <img class="card-img-top" src="src/IMG/sistema-solar.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary" onclick="teste()">Go somewhere</a>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="open-modal-btn btn btn-info" onclick="abrirModalCard1()">Saiba mais</button>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div style="padding: 210px;">
-
-        </div>
-
-        <div class="col-4">
-            <div class="my-4" style="margin-left: -135px;">
-                <div class="card" style="width: 40rem; border-radius: 16px;">
+             </div>
+             <div class="col-md-4">
+                <div class="card" style="border-radius: 16px; background-color: rgb(0, 0, 0); color: azure;">
                     <img class="card-img-top" src="src/IMG/sistema-solar.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <p></p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="open-modal-btn btn btn-info" onclick="abrirModalCard2()">Saiba mais</button>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+             </div>
+             <div class="col-md-4">
+                <div class="card" style="border-radius: 16px; background-color: rgb(0, 0, 0); color: azure;">
+                    <img class="card-img-top" src="src/IMG/sistema-solar.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="open-modal-btn btn btn-info" onclick="abrirModalCard3()">Saiba mais</button>
+                    </div>
+                </div>
+             </div>
+         </div>
+     </div>
 
 
 
+
+    <!-- IMAGEM DO JOGO -->
     <div id="carouselExampleIndicators" class="carousel slide custom-imgCarrossel2 justify-content-center my-4" data-ride="carousel"
         style="margin-top: 10px; margin: auto">
         <div class="carousel-inner" style="border-radius: 16px;">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="src/IMG/sistema-solar.jpg" alt="Third slide">
+                <img class="d-block w-100" src="src/IMG/Banner/BannerJogosExoplanetas_1.png" alt="Third slide">
             </div>
         </div>
     </div>
+    
 
 
-    
-    
-    
-    
-    <!-- MODAL ALERTA -->
-    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+
+    <!-- MODAL NAVBAR COM CONTEÚDO DE OUTRO HTML  -->
+    <div class="modal fade" id="infoModal1" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="infoModalLabel">Bem-vindo ao Haxen!</h5>
+                    <div style="margin-left: 305px;">
+                        <h5 class="modal-title" id="infoModal3Label">EXOPLANETAS</h5>
+                    </div>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <p>HAXEN é um grupo no hackathon da NASA 2024, formado para desenvolver soluções inovadoras e
-                        criativas em tecnologia espacial e outros desafios científicos. O time está focado em trazer
-                        ideias que combinam expertise técnica e visão estratégica para resolver problemas relevantes de
-                        forma impactante.</p>
+                <div id="modalBody" class="modal-body" style="overflow-y: auto;">
+                    
                 </div>
                 <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Saiba mais</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
-
-
-
-
-
-<!-- MODAL COM CONTEÚDO DE OUTRO HTML -->
-<div class="modal fade" id="infoModal1" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="infoModal3Label">MODAL HTML</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div id="modalBody" class="modal-body" style="overflow-y: auto;">
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+    
+    
+    
+    
+    <!-- MODAL CARD COM CONTEÚDO DE OUTRO HTML 1 -->
+    <div class="modal fade" id="infoModalCard1" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div style="margin-left: 305px;">
+                        <h5 class="modal-title" id="infoModal3Label">EXOPLANETAS</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBody1" class="modal-body" style="overflow-y: auto;">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Saiba mais</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-
-
-
-
-
+    
+    
+    
+    
+    <!-- MODAL CARD COM CONTEÚDO DE OUTRO HTML 2 -->
+    <div class="modal fade" id="infoModalCard2" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div style="margin-left: 305px;">
+                        <h5 class="modal-title" id="infoModal3Label">EXOPLANETAS</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBody2" class="modal-body" style="overflow-y: auto;">
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Saiba mais</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- MODAL CARD COM CONTEÚDO DE OUTRO HTML 3 -->
+    <div class="modal fade" id="infoModalCard3" tabindex="-1" aria-labelledby="infoModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div style="margin-left: 305px;">
+                        <h5 class="modal-title" id="infoModal3Label">EXOPLANETAS</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBody3" class="modal-body" style="overflow-y: auto;">
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Saiba mais</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -247,8 +298,11 @@
     </div>
 </div>
 
-<div style="margin-top: 80px;">
-    asdasdasd
+
+
+
+<div style="margin-top: 1px;">
+    .
 </div>
 
 <footer>
