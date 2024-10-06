@@ -35,14 +35,14 @@ Este projeto foi criado pensando em jovens curiosos sobre o espaço e astronomia
 
 4. Abra o arquivo index.html em seu navegador!
 
-##Contribuições
+## Contribuições
 - Estamos abertos a contribuições! Se você tiver ideias para melhorar a parte informativa ou ajudar no desenvolvimento das funcionalidades planejadas, sinta-se à vontade para abrir um pull request ou uma issue.
 
-##Próximos Passos
+## Próximos Passos
 - Desenvolvimento dos mini-games interativos.
 - Expansão do banco de dados de exoplanetas.
 - Sistema de gamificação com conquistas e rankings.
   
-##Contato
+## Contato
 - Para dúvidas ou sugestões, envie um e-mail para: mluca2564@gmail.com
    
