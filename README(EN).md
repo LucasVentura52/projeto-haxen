@@ -1,6 +1,6 @@
 # Planet Explorer 🚀
 
-Welcome to **Exoplanet Explorer**, an informative website dedicated to the fascinating world of exoplanets! This project was created with the aim of teaching in an engaging and accessible way about planets outside our solar system, especially for children and teenagers.
+Welcome to **Planet Explorer**, an informative website dedicated to the fascinating world of exoplanets! This project was created with the aim of teaching in an engaging and accessible way about planets outside our solar system, especially for children and teenagers.
 
 ## Main Features
 
