@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../../IMG/WhatsApp_Image.png" type="image/x-icon">
+    <style>
+        body {
+            background: url('../../IMG/exo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: rgb(0, 0, 0);
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        body.show {
+            opacity: 1;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        ul {
+            font-size: 1rem;
+        }
+
+        .content-box {
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 16px; 
+            background-color: rgba(33, 37, 41, 0.9); 
+            color: #fff; 
+            border-radius: 16px; 
+            border: 1px solid azure;
+        }
+
+        @media (max-width: 768px) {
+
+            p,
+            ul {
+                font-size: 0.9rem;
+            }
+
+            .content-box {
+                margin-top: 20px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="content-box">
+                    <h4>Como Funciona a Zona Habitável?</h4>
+                    <ul>
+                        <li>Distância da Estrela: Imagina que cada estrela é como uma lâmpada. Se você estiver muito
+                            perto da lâmpada, pode ficar quente demais e até derreter! Se estiver muito longe, pode
+                            ficar tão frio que tudo congela. A zona habitável é aquele espaço onde a temperatura é
+                            "justo certo" para a água ficar líquida, nem quente demais nem fria demais.</li>
+                        <li>Temperatura Ideal: Para que a água possa estar líquida, a temperatura precisa estar entre
+                            0°C e 100°C (ou seja, não pode estar congelando nem fervendo).</li>
+                    </ul>
+                    <br>
+                    <h4>Exemplos de Exoplanetas que Podem Ser "Casas da Água"</h4>
+                    <h5>1. Proxima Centauri b:</h5>
+                    <ul style="margin-left: 30px;">
+                        <li>Estrela: Próxima Centauri, que é a estrela mais pertinho do nosso Sol.</li>
+                        <li>Distância: Ele está na zona habitável da sua estrela, o que significa que pode ter água
+                            líquida por lá!</li>
+                        <li>Características: Próxima b é do tamanho da Terra, e isso deixa todo mundo animado porque
+                            pode ter ar e, quem sabe, até vida!</li>
+                    </ul>
+                    <br>
+                    <h5>2. Kepler-186f:</h5>
+                    <ul style="margin-left: 30px;">
+                        <li>Estrela: Kepler-186, uma estrela que é bem mais fria que o nosso Sol.</li>
+                        <li>Distância: Também está na zona habitável, recebendo a quantidade certa de luz para ser bem
+                            confortável.</li>
+                        <li>Características: Kepler-186f é como se fosse um "primo" da Terra, e também pode ter água
+                            líquida na sua superfície.</li>
+                    </ul>
+                    <br>
+                    <h4>Resumindo</h4>
+                    <p>A zona habitável é como uma área especial onde a água pode ficar líquida, e isso é super
+                        importante para a vida. Quando os cientistas encontram exoplanetas nessa zona, eles ficam muito
+                        empolgados,
+                        porque esses planetas podem ser "casas da água", assim como a Terra! 🌍💧✨</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('show');
+        };
+    </script>
+</body>
+
+</html>
